@@ -1,0 +1,35 @@
+.clubs {
+  margin-top: 107px;
+}
+.clubs__slider {
+  margin-top: 28px;
+}
+
+.cart {
+  //   border-radius: 40px;
+  //   background: #170000;
+  border: 5px solid #ca4f45;
+  box-sizing: border-box;
+  box-shadow: 4px 4px 20px #851b13;
+  border-radius: 40px;
+  overflow: hidden;
+}
+.cart__img {
+  width: 100%;
+}
+.cart__desc {
+  background: #000000;
+  padding: 40px 67px;
+  text-align: center;
+}
+.club__name {
+  color: #ca4f45;
+  font-size: 30px;
+  line-height: 40px;
+  text-decoration-line: underline;
+}
+.club__adress {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 40px;
+}

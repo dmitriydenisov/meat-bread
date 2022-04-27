@@ -1,0 +1,62 @@
+html,
+body {
+  min-height: 100%;
+}
+body {
+  font-family: "Rockwell Nova", sans-serif;
+  background: url("../img/bg/bg-ram.svg"), url("../img/bg/bg-bull.svg"),
+    linear-gradient(180deg, #340000 34.78%, #a8291f 120.64%);
+  background-position: bottom, left center;
+  color: #fff;
+  font-weight: 700;
+  background-repeat: no-repeat;
+}
+.container {
+  width: 2196px;
+  margin: 0 auto;
+}
+
+.title {
+  position: relative;
+
+  h3 {
+    font-size: 55px;
+    // line-height: 72px;
+  }
+}
+.subtitle {
+  position: absolute;
+  right: -172px;
+  top: -35px;
+
+  font-size: 105px;
+  // line-height: 138px;
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.1);
+}
+
+.phone {
+  text-align: center;
+  &--footer {
+    // text-align: left;
+  }
+}
+.phone__text {
+  font-size: 50px;
+  line-height: 66px;
+  text-transform: uppercase;
+  &--footer {
+    font-size: 20px;
+    line-height: 26px;
+    text-decoration-line: underline;
+  }
+}
+.phone__number {
+  font-size: 80px;
+  line-height: 105px;
+  &--footer {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
