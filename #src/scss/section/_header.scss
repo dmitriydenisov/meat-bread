@@ -16,6 +16,13 @@
 .menu__list + .menu__list {
   padding-left: 42px;
 }
+.menu__link--active {
+  text-decoration-line: underline;
+  color: #ca4f45;
+}
+.logo img {
+  filter: drop-shadow(0px 0px 100px rgba(168, 41, 31, 0.6));
+}
 .header__box {
   display: flex;
   justify-content: space-between;

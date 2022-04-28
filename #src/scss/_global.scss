@@ -4,11 +4,20 @@ body {
 }
 body {
   font-family: "Rockwell Nova", sans-serif;
+  color: #fff;
+  font-weight: 700;
+}
+body.bg-default {
   background: url("../img/bg/bg-ram.svg"), url("../img/bg/bg-bull.svg"),
     linear-gradient(180deg, #340000 34.78%, #a8291f 120.64%);
   background-position: bottom, left center;
-  color: #fff;
-  font-weight: 700;
+  background-repeat: no-repeat;
+}
+body.bg-delivery {
+  background: url("../img/bg/bg-delivery-b.svg"),
+    url("../img/bg/bg-delivery-r.svg"),
+    linear-gradient(180deg, #340000 34.78%, #a8291f 120.64%);
+  background-position: bottom, right 20%;
   background-repeat: no-repeat;
 }
 .container {
