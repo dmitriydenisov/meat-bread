@@ -1,4 +1,6 @@
 .categories {
+  position: sticky;
+  top: 0;
   display: flex;
   align-items: center;
   margin-top: 85px;
@@ -66,8 +68,8 @@
 
 .btn-block-more {
   position: absolute;
-  right: 174px;
-  top: 401px;
+  right: 0;
+  top: 0;
   background: #851b13;
   border-radius: 30px;
   width: 493px;
