@@ -15,13 +15,15 @@ body {
   width: 2196px;
   margin: 0 auto;
 }
+.hidden {
+  display: none;
+}
 
 .title {
   position: relative;
 
   h3 {
     font-size: 55px;
-    // line-height: 72px;
   }
 }
 .subtitle {
@@ -39,7 +41,11 @@ body {
 .phone {
   text-align: center;
   &--footer {
-    // text-align: left;
+  }
+  &--restaraunt {
+    position: absolute;
+    text-align: left;
+    bottom: 45px;
   }
 }
 .phone__text {
@@ -51,6 +57,10 @@ body {
     line-height: 26px;
     text-decoration-line: underline;
   }
+  &--restaraunt {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 .phone__number {
   font-size: 80px;
@@ -59,4 +69,30 @@ body {
     font-size: 20px;
     line-height: 26px;
   }
+  &--restaraunt {
+    font-size: 50px;
+    line-height: 66px;
+  }
+}
+
+.download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+
+  &--restauran {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+button {
+  background: transparent;
+  color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }

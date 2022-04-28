@@ -1,0 +1,96 @@
+include section/header.pug
+main.main
+    .container
+        .title.title--restaraunt
+            h3 Мясные клубы
+            .subtitle Там где вкусно
+        .description
+            img(src="img/test.svg", alt="фото ресторана")
+            .phone.phone--restaraunt
+                p.phone__text.phone__text--restaraunt Единый номер:
+                a.phone__number.phone__number--restaraunt(href="tel:+78126701555") 8 (812) 670-15-55
+            .download.download--restauran 
+                a.download__apple(href="") 
+                    img(src="img/apple.svg", alt="")
+                a.download__android(href="") 
+                    img(src="img/google.svg", alt="")
+        p.slogan Если аромат свежей выпечки так и норовит возбудить <br>
+                | в вас сильный голод, то данное заведение сможет <br>
+                | доставить вам радость. Помимо вкусной еды вас ждет горячий кофе или чай.
+        .information
+            ul.restaurant-menu
+                li.restaurant-menu__item
+                    a.restaurant-menu__link(href="usercontent/menu.pdf")  меню клуба
+                li.restaurant-menu__item
+                    a.restaurant-menu__link(href="usercontent/banket-menu.pdf") банкетное меню клуба
+                li.restaurant-menu__item
+                    button.restaurant-menu__btn.active интерьер
+                li.restaurant-menu__item
+                    button.restaurant-menu__btn 3D тур
+            .tabs-content
+                .tabs-content__item.active
+                    .restaurant__slider.swiper
+                        .swiper-wrapper 
+                            .swiper-slide 
+                                img(src="img/usercontent/photo-1.jpg", alt="Фото 1")
+                            .swiper-slide
+                                img(src="img/usercontent/photo-2.jpg", alt="Фото 2")
+                            .swiper-slide
+                                img(src="img/usercontent/photo-3.jpg", alt="Фото 3")
+                            .swiper-slide
+                                img(src="img/usercontent/photo-3.jpg", alt="Фото 3")
+                .tabs-content__item 
+                    img(src="img/usercontent/3d-tour.jpg", alt="").tabs-content__img
+        .title
+            h3 Мы всегда рядом
+            .subtitle всегда на связи
+        .map
+.container
+    footer.footer
+        .addresses
+            .addresses__item
+                ul.addresses-list
+                    li.addresses-list__item.addresses-list__item--orange
+                        a(href="#") Ул. ворошилова 3
+                    li.addresses-list__item.addresses-list__item--orange
+                        a(href="#") пр. коммуны 63
+                    li.addresses-list__item.addresses-list__item--orange
+                        a(href="#") Кудрово, ул.Пражская 16
+            .addresses__item
+                ul.addresses-list
+                    li.addresses-list__item.addresses-list__item--blue
+                        a(href="#") Выборгское шоссе 15
+                    li.addresses-list__item.addresses-list__item--blue
+                        a(href="#") Учебный переулок 3а
+                    li.addresses-list__item.addresses-list__item--blue
+                        a(href="#") Типанова 27/39
+                    li.addresses-list__item.addresses-list__item--blue
+                        a(href="#") Суздальский 7
+                    li.addresses-list__item.addresses-list__item--blue
+                        a(href="#") Светлановский 48 к4
+            .addresses__item
+                ul.addresses-list
+                    li.addresses-list__item.addresses-list__item--green
+                        a(href="#") 9-я линия В.О. д 16
+                    li.addresses-list__item.addresses-list__item--red
+                        a(href="#") Пр. Просвещения 74\2
+                    li.addresses-list__item.addresses-list__item--red
+                        a(href="#") Пр.Науки 23
+        .footer__bottom
+            a.footer__doc(href="#") Юридические документы
+            ul.social-list
+                li.social-list__item 
+                    a(href="#")
+                        img(src="img/social/instagram.svg", alt="инстаграм")
+                li.social-list__item 
+                    a(href="#")
+                        img(src="img/social/vk.svg", alt="ВК")
+                li.social-list__item 
+                    a(href="#")
+                        img(src="img/social/email.svg", alt="Почта")
+            .phone.phone--footer
+                p.phone__text.phone__text--footer Единый номер:
+                a.phone__number.phone__number--footer(href="tel:+78126701555") 8 (812) 670-15-55
+        .copyright 2022
+script(src="https://unpkg.com/swiper@8/swiper-bundle.min.js")
+script(src="js/main.js")
