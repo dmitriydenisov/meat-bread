@@ -74,7 +74,7 @@
   border-radius: 30px;
   width: 493px;
   padding: 50px 40px;
-  //   display: none;
+  display: none;
   .btn-block__item {
     display: block;
   }
@@ -87,9 +87,8 @@
     margin-top: 22px;
   }
 }
-.btn-block__item-more.active-test ~ .btn-block-more {
-  //   display: block;
-  background: green;
+.btn-block__item-more.btn-block__item-more--active + .btn-block-more {
+  display: block;
 }
 .delivery__content {
   margin-top: 85px;

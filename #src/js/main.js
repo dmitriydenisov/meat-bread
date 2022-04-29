@@ -64,3 +64,11 @@ tabItems.forEach(checkoutTabs);
 // for (const tab of tabItems) {
 //   checkoutTabs();
 // }
+
+const menu = document.querySelector(".btn-block__item-more");
+
+if (menu) {
+  menu.addEventListener("click", function () {
+    this.classList.toggle("btn-block__item-more--active");
+  });
+}
