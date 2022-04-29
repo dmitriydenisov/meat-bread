@@ -13,21 +13,27 @@ html(lang="ru")
                 nav.menu
                     ul.menu__list
                         li.menu__list 
-                            a.menu__link.menu__link--active(href="#") Главная
+                            a.menu__link(href="#") Главная
                         li.menu__list 
                             a.menu__link(href="delivery.html") Доставка
                         li.menu__list 
                             a.menu__link(href="contacts.html") Контакты
                 a.logo(href="#")
-                        img(src="img/logo.svg", alt="logo") 
+                        img(src="img/logo.svg", alt="logo", height="171") 
                 .header__box 
                     a.header__phone(href="tel:+78126701555") 8 (812) 670-15-55
                     a.header__basket(href="#")
                         img(src="img/basket.svg", alt="Корзина")
-                    ul.social
-                        li.social__item 
-                        li.social__item 
-                        li.social__item 
+                    ul.social-list.social-list--top
+                        li.social-list__item 
+                            a(href="#")
+                                img(src="img/social/instagram.svg", alt="инстаграм")
+                        li.social-list__item 
+                            a(href="#")
+                                img(src="img/social/vk.svg", alt="ВК")
+                        li.social-list__item 
+                            a(href="#")
+                                img(src="img/social/email.svg", alt="Почта")
     main.main
         .container
             section.clubs
@@ -132,8 +138,7 @@ html(lang="ru")
                 .phone
                     p.phone__text Единый номер:
                     a.phone__number(href="tel:+78126701555") 8 (812) 670-15-55
-    .container
-        include section/footer.pug
+            include section/footer.pug
         
     script(src="https://unpkg.com/swiper@8/swiper-bundle.min.js")
     script(src="js/main.js")

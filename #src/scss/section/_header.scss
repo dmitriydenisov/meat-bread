@@ -1,6 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   margin-top: 70px;
 }
@@ -25,7 +26,9 @@
 }
 .header__box {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  width: 355px;
+  flex-wrap: wrap;
 }
 .header__phone {
   font-size: 30px;
@@ -33,4 +36,7 @@
   color: #ca4f45;
   margin-right: 43px;
   text-decoration-line: underline;
+}
+.social-list--top {
+  margin-top: 25px;
 }
