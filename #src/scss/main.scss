@@ -54,3 +54,22 @@
 @import "pages/delivery";
 @import "pages/basket";
 @import "pages/about";
+
+.sale__img {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.sale__description {
+  width: 1541px;
+  margin-bottom: 340px;
+}
+.sale__header {
+  font-size: 55px;
+  line-height: 72px;
+}
+.sale__text {
+  font-weight: 300;
+  font-size: 45px;
+  line-height: 59px;
+  white-space: pre-line;
+}
