@@ -37,6 +37,23 @@
   margin-right: 43px;
   text-decoration-line: underline;
 }
+.header__basket {
+  position: relative;
+  .basket__num {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    background: #ca4f45;
+    border-radius: 50%;
+    font-size: 25px;
+    line-height: 33px;
+    text-align: center;
+    right: -38px;
+    bottom: 0;
+
+    color: #ffffff;
+  }
+}
 .social-list--top {
   margin-top: 25px;
 }

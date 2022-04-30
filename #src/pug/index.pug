@@ -13,7 +13,7 @@ html(lang="ru")
                 nav.menu
                     ul.menu__list
                         li.menu__list 
-                            a.menu__link(href="#") Главная
+                            a.menu__link.menu__link--active(href="#") Главная
                         li.menu__list 
                             a.menu__link(href="delivery.html") Доставка
                         li.menu__list 
@@ -24,6 +24,7 @@ html(lang="ru")
                     a.header__phone(href="tel:+78126701555") 8 (812) 670-15-55
                     a.header__basket(href="#")
                         img(src="img/basket.svg", alt="Корзина")
+                        p.basket__num 1
                     ul.social-list.social-list--top
                         li.social-list__item 
                             a(href="#")
@@ -43,54 +44,55 @@ html(lang="ru")
                 .clubs__slider.swiper
                     .swiper-wrapper 
                         .swiper-slide 
-                            a(href="#") 
+                            a(href="restaurant.html") 
                                 .cart 
                                     img.cart__img(src="img/xxl.jpg", alt="")
                                     .cart__desc 
                                         .club__name Мясной клуб
                                         .club__adress ул.Ворошилова  3
                         .swiper-slide
-                            a(href="#") 
+                            a(href="restaurant.html") 
                                 .cart 
                                     img.cart__img(src="img/xxl.jpg", alt="")
                                     .cart__desc 
                                         .club__name Мясной клуб
                                         .club__adress ул.Ворошилова  3
                         .swiper-slide
-                            a(href="#") 
+                            a(href="restaurant.html") 
                                 .cart 
                                     img.cart__img(src="img/xxl.jpg", alt="")
                                     .cart__desc 
                                         .club__name Мясной клуб
                                         .club__adress ул.Ворошилова  3
                         .swiper-slide
-                            a(href="#") 
+                            a(href="restaurant.html") 
                                 .cart 
                                     img.cart__img(src="img/xxl.jpg", alt="")
                                     .cart__desc 
                                         .club__name Мясной клуб
                                         .club__adress ул.Ворошилова  3
                         .swiper-slide
-                            a(href="#") 
+                            a(href="restaurant.html") 
                                 .cart 
                                     img.cart__img(src="img/xxl.jpg", alt="")
                                     .cart__desc 
                                         .club__name Мясной клуб
                                         .club__adress ул.Ворошилова  3
                         .swiper-slide
-                            a(href="#") 
+                            a(href="restaurant.html") 
                                 .cart 
                                     img.cart__img(src="img/xxl.jpg", alt="")
                                     .cart__desc 
                                         .club__name Мясной клуб
                                         .club__adress ул.Ворошилова  3
                         .swiper-slide
-                            a(href="#") 
+                            a(href="restaurant.html") 
                                 .cart 
                                     img.cart__img(src="img/xxl.jpg", alt="")
                                     .cart__desc 
                                         .club__name Мясной клуб
                                         .club__adress ул.Ворошилова  3
+                a(href="#map").map-link Смотреть на карте 
             section.discounts
                 .title
                     h3 Мясные акции
@@ -99,7 +101,7 @@ html(lang="ru")
                     .discounts__slider.swiper
                         .swiper-wrapper 
                             .swiper-slide 
-                                .discounts-cart
+                                a.discounts-cart(href="sale.html") 
                                     .discounts-cart__images
                                         img.discounts-cart__img(src="img/discount.jpg", alt="Акция")
                                     .discounts-cart__desc 
@@ -108,7 +110,7 @@ html(lang="ru")
                                         p.discounts-club__text на всю сладкую выпечку <br> скидка 50%
                                     a.discounts-club__more(href="#") подробнее
                             .swiper-slide 
-                                .discounts-cart
+                                a.discounts-cart(href="sale.html")
                                     .discounts-cart__images
                                         img.discounts-cart__img(src="img/discount.jpg", alt="Акция")
                                     .discounts-cart__desc 
@@ -117,7 +119,7 @@ html(lang="ru")
                                         p.discounts-club__text на всю сладкую выпечку <br> скидка 50%
                                     a.discounts-club__more(href="#") подробнее
                             .swiper-slide 
-                                .discounts-cart
+                                a.discounts-cart(href="sale.html")
                                     .discounts-cart__images
                                         img.discounts-cart__img(src="img/discount.jpg", alt="Акция")
                                     .discounts-cart__desc 
@@ -130,7 +132,7 @@ html(lang="ru")
             .delivery
                 .delivery__title Доставка
                 a.delivery__btn(href="delivery.html") заказать
-            .contacts 
+            .contacts#map
                 .title
                     h3 Мы всегда рядом
                     .subtitle всегда на связи

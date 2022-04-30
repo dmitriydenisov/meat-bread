@@ -24,6 +24,7 @@ html(lang="ru")
                     a.header__phone(href="tel:+78126701555") 8 (812) 670-15-55
                     a.header__basket(href="#")
                         img(src="img/basket.svg", alt="Корзина")
+                        p.basket__num 1
                     ul.social-list.social-list--top
                         li.social-list__item 
                             a(href="#")
@@ -59,7 +60,7 @@ html(lang="ru")
                                 .basket-products__img
                                     img(src="img/products/product.jpg", alt="салат")
                                 .basket-products__name Салат  с  курой  и огурцами
-                                .cart__count 
+                                .cart__count(data-counter="") 
                                     button.cart-btn.cart-minus
                                         img(src="img/minus.svg", alt="убрать")
                                     span.count 1
@@ -73,7 +74,7 @@ html(lang="ru")
                                     img(src="img/products/product.jpg", alt="салат")
                                 //- img.basket-products__img(src="img/products/product.jpg", alt="салат")
                                 .basket-products__name Салат  с  курой  и огурцами
-                                .cart__count 
+                                .cart__count(data-counter="") 
                                     button.cart-btn.cart-minus
                                         img(src="img/minus.svg", alt="убрать")
                                     span.count 1
@@ -87,7 +88,7 @@ html(lang="ru")
                                     img(src="img/products/product.jpg", alt="салат")
                                 //- img.basket-products__img(src="img/products/product.jpg", alt="салат")
                                 .basket-products__name Салат  с  курой  и огурцами
-                                .cart__count 
+                                .cart__count(data-counter="") 
                                     button.cart-btn.cart-minus
                                         img(src="img/minus.svg", alt="убрать")
                                     span.count 1
@@ -135,3 +136,21 @@ html(lang="ru")
                         p.phone__text.phone__text--footer Единый номер:
                         a.phone__number.phone__number--footer(href="tel:+78126701555") 8 (812) 670-15-55
                 .copyright 2022
+    .delivery-popup#popup
+        .wrapper
+            .delivery-popup__body
+                button.delivery-popup__close
+                    span
+                .delivery-popup__content.delivery-popup__content--basket
+                    .delivery-popup__header Спасибо за ваш заказ мы уже начали собирать его
+                    .delivery-popup__title.delivery-popup__title--basket скажите в какое время привезти?
+                    form.delivery-popup__form
+                        input.delivery-popup__input(type="timepicker", placeholder='12:00')
+                        label.check 
+                            input.check__input(type="checkbox")
+                            span.check__box
+                            span.check__title Как можно скорее
+
+                    .cart__add.cart__add--basket
+                        button.cart__btn.cart__btn--basket Готово
+script(src="js/main.js")
