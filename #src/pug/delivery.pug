@@ -44,7 +44,7 @@ html(lang="ru")
             .categories
                 p.categories__title Категории:
                 .btn-block 
-                    button.btn-block__item(data-variant="Донер") Донер
+                    button.btn-block__item.btn-block__item--active(data-variant="Донер") Донер
                     button.btn-block__item(data-variant="Холодные закуски") Холодные закуски
                     button.btn-block__item(data-variant="Горячие закуски") Горячие закуски
                     button.btn-block__item(data-variant="Десерты") Десерты
@@ -54,13 +54,13 @@ html(lang="ru")
                     button.btn-block__item-more еще
                     .btn-block-more
                         button.btn-block__item-more еще
-                        button.btn-block__item(data-variant="Салаты") Салаты
-                        button.btn-block__item(data-variant="Салаты") Салаты
-                        button.btn-block__item(data-variant="Салаты") Салаты
-                        button.btn-block__item(data-variant="Салаты") Салаты
-                        button.btn-block__item(data-variant="Салаты") Салаты
+                        button.btn-block__item(data-variant="Салаты1") Салаты
+                        button.btn-block__item(data-variant="Салаты2") Салаты
+                        button.btn-block__item(data-variant="Салаты3") Салаты
+                        button.btn-block__item(data-variant="Салаты4") Салаты
+                        button.btn-block__item(data-variant="Салаты5") Салаты
             .delivery__content 
-                .categories__items(data-variant="Донер")
+                .categories__items.categories__items--active(data-variant="Донер")
                     .cart.cart--delivery
                         .cart__img 
                             img(src="img/products/product.jpg", alt="салат")
@@ -222,7 +222,8 @@ html(lang="ru")
                                     button.cart-btn.cart-plus
                                         img(src="img/plus.svg", alt="добавить")
                     .cart.cart--delivery 
-                        img.cart__img(src="img/products/product.jpg", alt="салат")
+                        .cart__img
+                            img(src="img/products/product.jpg", alt="салат")
                         .cart__desc 
                             .cart__price 
                                 .new-price 119₽
@@ -237,7 +238,8 @@ html(lang="ru")
                                     button.cart-btn.cart-plus
                                         img(src="img/plus.svg", alt="добавить")
                     .cart.cart--delivery 
-                        img.cart__img(src="img/products/product.jpg", alt="салат")
+                        .cart__img
+                            img(src="img/products/product.jpg", alt="салат")
                         .cart__desc 
                             .cart__price 
                                 .new-price 119₽
@@ -252,6 +254,22 @@ html(lang="ru")
                                     button.cart-btn.cart-plus
                                         img(src="img/plus.svg", alt="добавить")
                 .categories__items(data-variant="Холодные закуски")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
                     .cart.cart--delivery
                         .cart__img 
                             img(src="img/products/product.jpg", alt="салат")
@@ -285,7 +303,87 @@ html(lang="ru")
                                     span.count 1
                                     button.cart-btn.cart-plus
                                         img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
                 .categories__items(data-variant="Десерты")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
                     .cart.cart--delivery
                         .cart__img 
                             img(src="img/products/product.jpg", alt="салат")
@@ -319,7 +417,151 @@ html(lang="ru")
                                     span.count 1
                                     button.cart-btn.cart-plus
                                         img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
                 .categories__items(data-variant="Салаты")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
                     .cart.cart--delivery
                         .cart__img 
                             img(src="img/products/product.jpg", alt="салат")
@@ -353,7 +595,907 @@ html(lang="ru")
                                     span.count 1
                                     button.cart-btn.cart-plus
                                         img(src="img/plus.svg", alt="добавить")
-
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                .categories__items(data-variant="Салаты1")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                .categories__items(data-variant="Салаты2")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                .categories__items(data-variant="Салаты3")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                .categories__items(data-variant="Салаты4")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                .categories__items(data-variant="Салаты5")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                    .cart.cart--delivery
+                        .cart__img 
+                            img(src="img/products/product.jpg", alt="салат")
+                        .cart__desc 
+                            .cart__price 
+                                .new-price 119₽
+                                .old-price 119₽
+                            .cart__name Салат  с  курой  и огурцами
+                            .cart__add 
+                                button.cart__btn Добавить
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
             footer.footer
                 .download 
                     a.download__apple(href="") 

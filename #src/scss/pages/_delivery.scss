@@ -97,9 +97,12 @@
   width: 1531px;
 }
 .categories__items {
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  display: none;
+}
+.categories__items--active {
+  display: flex;
 }
 .cart--delivery {
   width: 475px;

@@ -93,21 +93,44 @@ const counters = document.querySelectorAll("[data-counter]");
 //меню на странице доставки
 const menu = document.querySelector(".btn-block__item-more");
 
-const tabNavItems = document.querySelectorAll("btn-block__item");
-
-for (const tabNavItem of tabNavItems) {
-  tabNavItem.addEventListener("click", () => {
-    console.log(tabNavItem.textContent);
+if (menu) {
+  menu.addEventListener("click", function () {
+    this.classList.add("btn-block__item-more--active");
   });
+
+  // function openMenu (event){
+  //   if(event.target.className != "btn-block__item-more”){
+  //     console.log('done')
+  //   }
+  // }
 }
 
-if (menu) {
-  // menu.addEventListener("click", function () {
-  //   this.classList.add("btn-block__item-more--active");
-  // });
-  !menu.addEventListener("click", function () {
-    this.classList.toggle("btn-block__item-more--active");
-  });
+const tabNavItems = document.querySelectorAll(".btn-block__item");
+const tabContentItems = document.querySelectorAll(".categories__items");
+
+for (const tabNavItem of tabNavItems) {
+  tabNavItem.addEventListener("click", activeTab);
+}
+
+function activeTab() {
+  for (const tabNavItem of tabNavItems) {
+    tabNavItem.classList.remove("btn-block__item--active");
+  }
+  this.classList.add("btn-block__item--active");
+  let tabName = this.getAttribute("data-variant");
+  activeTabContent(tabName);
+  if (menu.classList.contains("btn-block__item-more--active")) {
+    menu.classList.remove("btn-block__item-more--active");
+  }
+}
+
+function activeTabContent(tabName) {
+  for (const tabContentItem of tabContentItems) {
+    tabContentItem.classList.remove("categories__items--active");
+    if (tabContentItem.getAttribute("data-variant") === tabName) {
+      tabContentItem.classList.add("categories__items--active");
+    }
+  }
 }
 
 //модальное окно на странице доставки
