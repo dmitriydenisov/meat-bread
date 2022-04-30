@@ -93,6 +93,14 @@ const counters = document.querySelectorAll("[data-counter]");
 //меню на странице доставки
 const menu = document.querySelector(".btn-block__item-more");
 
+const tabNavItems = document.querySelectorAll("btn-block__item");
+
+for (const tabNavItem of tabNavItems) {
+  tabNavItem.addEventListener("click", () => {
+    console.log(tabNavItem.textContent);
+  });
+}
+
 if (menu) {
   // menu.addEventListener("click", function () {
   //   this.classList.add("btn-block__item-more--active");
