@@ -6,29 +6,14 @@ body {
   font-family: "Rockwell Nova", sans-serif;
   color: #fff;
   font-weight: 700;
-  background: url("../img/bg/bg-ram.svg"),
-    linear-gradient(180deg, #340000 34.78%, #a8291f 120.64%);
-  background-position: bottom;
-  background-repeat: no-repeat;
-}
-body.bg-default {
-  background: url("../img/bg/bg-ram.svg"), url("../img/bg/bg-bull.svg"),
-    linear-gradient(180deg, #340000 34.78%, #a8291f 120.64%);
-  background-position: bottom, left 1228px;
-  background-repeat: no-repeat;
-}
-body.bg-delivery {
-  background: url("../img/bg/bg-delivery-b.svg"),
-    url("../img/bg/bg-delivery-r.svg"),
-    linear-gradient(180deg, #340000 34.78%, #a8291f 120.64%);
-  background-position: bottom, right 610px;
-  background-repeat: no-repeat;
+  background: linear-gradient(180deg, #340000 34.78%, #a8291f 120.64%);
 }
 .main {
   margin-top: 102px;
 }
 .container {
-  width: 2196px;
+  // width: 2196px;
+  width: 90%;
   margin: 0 auto;
 }
 .hidden {
@@ -40,17 +25,15 @@ body.bg-delivery {
 
   h3 {
     font-size: 55px;
+    line-height: 1;
   }
 }
 .subtitle {
   position: absolute;
-  right: -172px;
+  right: -3%;
   top: -35px;
-
   font-size: 105px;
-  // line-height: 138px;
   text-transform: uppercase;
-
   color: rgba(255, 255, 255, 0.1);
 }
 

@@ -28,6 +28,7 @@ footer.footer
                     a(href="#") Пр. Просвещения 74\2
                 li.addresses-list__item.addresses-list__item--red
                     a(href="#") Пр.Науки 23
+    a.footer__phone--mobile(href="tel:+78126701555") 8 (812) 670-15-55
     .download 
         a.download__apple(href="") 
             img(src="img/apple.svg", alt="")
@@ -49,3 +50,67 @@ footer.footer
             p.phone__text.phone__text--footer Единый номер:
             a.phone__number.phone__number--footer(href="tel:+78126701555") 8 (812) 670-15-55
     .copyright 2022
+
+    .mobile-nav 
+        a.mobile-nav__item(href="index.html")
+            .mobile-nav__img 
+                img(src="img/mobileMenu/home.svg", alt="home")
+            .mobile-nav__text  главная
+        a.mobile-nav__item(href="delivery.html")
+            .mobile-nav__img 
+                img(src="img/mobileMenu/delivery.svg", alt="delivery")
+            .mobile-nav__text доставка
+        .mobile-nav__item(data-geo="")
+            .mobile-nav__img 
+                img(src="img/mobileMenu/geo.svg", alt="geo")
+            .mobile-nav__text заведения
+        .mobile-nav__item(data-contact="")
+            .mobile-nav__img 
+                img(src="img/mobileMenu/contacts.svg", alt="contacts")
+            .mobile-nav__text контакты
+        .mobile-nav__item(data-basket="")
+            .mobile-nav__img 
+                img(src="img/mobileMenu/basket.svg", alt="basket")
+            .mobile-nav__text корзина
+.modal(data-modal-contact) 
+    button.delivery-popup__close
+        span
+    .addresses
+        .addresses__item
+            ul.addresses-list
+                li.addresses-list__item.addresses-list__item--orange Ул. ворошилова 3
+                li.addresses-list__item.addresses-list__item--orange пр. коммуны 63
+                li.addresses-list__item.addresses-list__item--orange Кудрово, ул.Пражская 16
+        .addresses__item
+            ul.addresses-list
+                li.addresses-list__item.addresses-list__item--blue Выборгское шоссе 15
+                li.addresses-list__item.addresses-list__item--blue Учебный переулок 3а
+                li.addresses-list__item.addresses-list__item--blue Типанова 27/39
+                li.addresses-list__item.addresses-list__item--blue Суздальский 7
+                li.addresses-list__item.addresses-list__item--blue Светлановский 48 к4
+        .addresses__item
+            ul.addresses-list
+                li.addresses-list__item.addresses-list__item--green 9-я линия В.О. д 16
+                li.addresses-list__item.addresses-list__item--red Пр. Просвещения 74\2
+                li.addresses-list__item.addresses-list__item--red Пр.Науки 23
+
+.modal(data-modal-restaraunt) 
+    button.delivery-popup__close
+        span
+    .modal__slider.swiper
+        .swiper-wrapper 
+            .swiper-slide 
+                img(src="img/usercontent/photo-1.jpg", alt="Фото 1")
+            .swiper-slide
+                img(src="img/usercontent/photo-2.jpg", alt="Фото 2")
+            .swiper-slide
+                img(src="img/usercontent/photo-3.jpg", alt="Фото 3")
+            .swiper-slide
+                img(src="img/usercontent/photo-3.jpg", alt="Фото 3")
+        .swiper-button-next
+        .swiper-button-prev
+    .modal__description Краткое описание интерьера заведения для детального понимания посетителем антуража и эмоции на предстоящем ужине или обеде.
+
+.modal(data-modal-basket) 
+    button.delivery-popup__close
+        span

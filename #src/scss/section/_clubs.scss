@@ -15,19 +15,21 @@
 .cart {
   //   border-radius: 40px;
   //   background: #170000;
-  border: 5px solid #ca4f45;
+  // border: 5px solid #ca4f45;
   box-sizing: border-box;
   box-shadow: 4px 4px 20px #851b13;
-  border-radius: 40px;
+  border-radius: 10px 10px 20px 20px;
   overflow: hidden;
 }
 .cart__img {
   width: 100%;
+  object-fit: none;
 }
 .cart__desc {
   background: #000000;
   padding: 40px 67px;
   text-align: center;
+  margin-top: -4px;
 }
 .club__name {
   color: #ca4f45;

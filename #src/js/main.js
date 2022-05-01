@@ -1,23 +1,45 @@
 if (document.querySelector(".clubs__slider")) {
   const swiper = new Swiper(".clubs__slider", {
-    slidesPerView: 4,
-    spaceBetween: 39,
+    slidesPerView: 2,
+    spaceBetween: 15,
+    centeredSlides: true,
     loop: true,
     autoplay: {
       delay: 1500,
       disableOnInteraction: false,
+    },
+    breakpoints: {
+      900: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+        centeredSlides: false,
+      },
+      900: {
+        slidesPerView: 4,
+        spaceBetween: 39,
+      },
+      // 1920: {
+      //   slidesPerView: 4,
+      //   spaceBetween: 39,
+      // },
     },
   });
 }
 
 if (document.querySelector(".discounts__slider")) {
   const discountsSlider = new Swiper(".discounts__slider", {
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 60,
     loop: true,
     autoplay: {
       delay: 1500,
       disableOnInteraction: false,
+    },
+    breakpoints: {
+      900: {
+        slidesPerView: 2,
+        spaceBetween: 60,
+      },
     },
   });
 }
@@ -157,4 +179,41 @@ if (document.querySelector(".basket-products__btn")) {
       event.preventDefault();
       modal.classList.add("modal-active");
     });
+}
+
+const contactsMobile = document
+  .querySelector("[data-contact]")
+  .addEventListener("click", () => {
+    const modalGeo = document
+      .querySelector("[data-modal-contact]")
+      .classList.toggle("modal-active");
+  });
+
+const geoMobile = document
+  .querySelector("[data-geo]")
+  .addEventListener("click", () => {
+    const modalGeo = document
+      .querySelector("[data-modal-restaraunt]")
+      .classList.toggle("modal-active");
+  });
+
+const basketMobile = document
+  .querySelector("[data-basket]")
+  .addEventListener("click", () => {
+    const modalGeo = document
+      .querySelector("[data-modal-basket]")
+      .classList.toggle("modal-active");
+  });
+//слайдер в модальном окне
+
+if (document.querySelector(".modal__slider")) {
+  const swiper = new Swiper(".modal__slider", {
+    slidesPerView: 1,
+    spaceBetween: 15,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 }

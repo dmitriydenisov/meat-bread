@@ -44,7 +44,11 @@
     background: #fff;
   }
 }
-
+.map {
+  margin-top: 50px;
+  margin-bottom: 273px;
+  height: 730px;
+}
 .contacts {
   margin-bottom: 60px;
 }
@@ -73,3 +77,5 @@
   line-height: 59px;
   white-space: pre-line;
 }
+
+@import "media";

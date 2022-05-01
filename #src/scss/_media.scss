@@ -1,0 +1,634 @@
+@media (max-width: 2450px) {
+  .subtitle {
+    font-size: 85px;
+  }
+  .subtitle--mobile,
+  .mobile-nav,
+  .footer__phone--mobile {
+    display: none;
+  }
+}
+@media (max-width: 2300px) {
+  .discounts-cart__images {
+    height: auto;
+    &:before {
+      left: -30px;
+    }
+  }
+  .discounts-cart__img {
+    display: block;
+  }
+  .discounts-club__title {
+    font-size: 39px;
+    line-height: 48px;
+  }
+  .copyright {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 2250px) {
+  .discounts-club__title {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .delivery__title {
+    text-align: center;
+    font-size: 268px;
+    &:after {
+      font-size: 60px;
+    }
+  }
+}
+@media (max-width: 2200px) {
+  .discounts-cart__images {
+    width: 337px;
+    &:before {
+      width: 337px;
+      height: 337px;
+    }
+  }
+  .delivery {
+    width: auto;
+  }
+  .discounts {
+    margin-bottom: 210px;
+  }
+  .delivery__title {
+    font-size: 280px;
+    line-height: 380px;
+    &:after {
+      font-size: 65px;
+    }
+  }
+}
+@media (max-width: 2100px) {
+  .subtitle {
+    font-size: 70px;
+  }
+  .discounts-cart__images {
+    width: 300px;
+    &:before {
+      width: 300px;
+      height: 300px;
+    }
+  }
+  .discounts-club__title {
+    font-size: 30px;
+    line-height: 1;
+  }
+  .discounts-club__time {
+    font-size: 35px;
+    line-height: 1;
+  }
+  .discounts-club__text {
+    font-size: 27px;
+    line-height: 37px;
+  }
+  .delivery__title {
+    font-size: 245px;
+    line-height: 340px;
+    &:after {
+      font-size: 57px;
+    }
+  }
+}
+@media (max-width: 2050px) {
+  body.bg-default {
+    background-position: bottom, left 1185px;
+  }
+  .delivery__title {
+    font-size: 215px;
+    line-height: 320px;
+    &:after {
+      font-size: 50px;
+    }
+  }
+}
+@media (max-width: 2000px) {
+  .club__adress {
+    font-size: 29px;
+  }
+  .discounts-cart__images {
+    width: 290px;
+    &:before {
+      width: 290px;
+      height: 290px;
+    }
+  }
+  .delivery__title {
+    font-size: 215px;
+    line-height: 347px;
+    &:after {
+      font-size: 51px;
+    }
+  }
+}
+@media (max-width: 1980px) {
+  .club__adress {
+    font-size: 25px;
+  }
+
+  .discounts-cart__images {
+    width: 270px;
+    &:before {
+      width: 270px;
+      height: 270px;
+    }
+  }
+}
+@media (max-width: 1920px) {
+  .map-link {
+    font-size: 30px;
+  }
+  .discounts-cart__images {
+    width: 240px;
+    &:before {
+      width: 240px;
+      height: 240px;
+    }
+  }
+  .discounts-club__time {
+    margin: 0;
+    line-height: 1.3;
+  }
+
+  .discounts__kink img {
+    width: 160px;
+  }
+  .delivery__title {
+    font-size: 200px;
+    line-height: 300px;
+    &:after {
+      font-size: 45px;
+      right: -70px;
+    }
+  }
+
+  .discounts-cart__images {
+    width: 200px;
+    &:before {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  .discounts-club__time {
+    font-size: 25px;
+  }
+  .discounts-club__text {
+    font-size: 23px;
+    line-height: 27px;
+  }
+  .discounts-club__more {
+    font-size: 25px;
+  }
+  .delivery__title {
+    font-size: 193px;
+    line-height: 340px;
+    &:after {
+      font-size: 47px;
+    }
+  }
+}
+@media (max-width: 1680px) {
+  .delivery__title {
+    line-height: 1.4;
+    &:after {
+      width: auto;
+      right: 122px;
+      font-size: 45px;
+    }
+  }
+}
+@media (max-width: 1600px) {
+  .menu__list {
+    font-size: 15px;
+  }
+  .logo img {
+    width: 200px;
+  }
+  .header__phone {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  .header__basket {
+    display: flex;
+    align-items: center;
+    img {
+      width: 22px;
+    }
+    .basket__num {
+      width: 20px;
+      height: 20px;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      left: 20px;
+      bottom: 10px;
+    }
+  }
+  .subtitle {
+    font-size: 40px;
+    top: 0;
+  }
+  .social-list--top {
+    margin-top: 15px;
+  }
+  .social-list__item {
+    + .social-list__item {
+      margin-left: 37px;
+    }
+    img {
+      width: 25px;
+    }
+  }
+  .cart__desc {
+    padding: 40px 23px;
+  }
+  .map-link {
+    font-size: 25px;
+  }
+  .discounts {
+    margin-bottom: 88px;
+  }
+  .delivery__title {
+    &:after {
+      right: 86px;
+    }
+  }
+  .phone__text {
+    font-size: 40px;
+    line-height: 49px;
+  }
+  .phone__number {
+    font-size: 60px;
+    line-height: 1;
+  }
+  .addresses-list__item {
+    font-size: 12px;
+  }
+  .download__apple img {
+    width: 40px;
+    height: 41px;
+  }
+  .download__android img {
+    width: 55px;
+    height: 55px;
+  }
+  .phone__text--footer {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .phone__number--footer {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+@media (max-width: 1440px) {
+  .discounts-cart__images {
+    width: 240px;
+  }
+  .discounts-club__title {
+    font-size: 29px;
+  }
+  .discounts-club__time {
+    font-size: 23px;
+    line-height: 35px;
+    // margin: 0;
+  }
+  .discounts-club__text {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .discounts-club__more {
+    font-size: 20px;
+  }
+  .delivery__title {
+    &:after {
+      right: 15px;
+    }
+  }
+}
+@media (max-width: 1366px) {
+  .cart__desc {
+    padding: 40px 13px;
+  }
+  .club__name {
+    font-size: 20px;
+  }
+  .discounts-cart__images {
+    margin-right: 25px;
+    &:before {
+      width: 180px;
+      height: 180px;
+    }
+  }
+  .discounts-club__title {
+    font-size: 26px;
+  }
+  .delivery__title {
+    font-size: 169px;
+    line-height: 260px;
+    &:after {
+      width: auto;
+      right: 50px;
+      font-size: 40px;
+    }
+  }
+}
+@media (max-width: 1280px) {
+  .cart__desc {
+    padding: 40px 8px;
+  }
+  .club__adress {
+    font-size: 23px;
+  }
+}
+@media (max-width: 1200px) {
+  .discounts-cart__images {
+    &:before {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  .discounts-club__title {
+    font-size: 23px;
+  }
+  .discounts-club__time {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .discounts-club__text {
+    font-size: 15px;
+    line-height: 1.2;
+  }
+  .delivery__title {
+    font-size: 130px;
+    line-height: 200px;
+    &:after {
+      right: 116px;
+      font-size: 29px;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .menu__list + .menu__list {
+    padding-left: 28px;
+  }
+  .menu__list {
+    font-size: 13px;
+  }
+  .logo img {
+    width: 150px;
+  }
+  .header__phone {
+    font-size: 18px;
+    line-height: 1;
+  }
+  .social-list--top {
+    width: 100%;
+  }
+  .header__basket img {
+    width: 15px;
+  }
+  .header__basket .basket__num {
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    left: 13px;
+    bottom: 0;
+  }
+  .social-list__item img {
+    width: 20px;
+  }
+  .title h3 {
+    font-size: 35px;
+  }
+  .subtitle {
+    font-size: 25px;
+  }
+  .delivery__title:after {
+    right: 35px;
+  }
+}
+@media (max-width: 900px) {
+  .menu__list + .menu__list {
+    padding-left: 25px;
+  }
+  .menu__list {
+    font-size: 10px;
+  }
+  .delivery__title {
+    font-size: 100px;
+    line-height: 1.7;
+    &:after {
+      font-size: 23px;
+      right: 80px;
+    }
+  }
+}
+@media (max-width: 768px) {
+}
+
+@media (max-width: 560px) {
+  body {
+    overflow-x: hidden;
+  }
+  .menu {
+    display: none;
+  }
+  .header__basket,
+  .social-list--top {
+    display: none;
+  }
+  .header {
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .logo {
+    width: 100%;
+    text-align: center;
+    img {
+      width: 100%;
+    }
+  }
+  .cart {
+    border: 1px solid #ca4f45;
+  }
+  .cart__desc {
+    padding: 15px 20px;
+  }
+  .club__name {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .club__adress {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .map-link {
+    display: none;
+  }
+  .title {
+    h3 {
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+  .subtitle {
+    // font-size: 34px;
+    // line-height: 53px;
+    // right: -76px;
+    // // width: 350px;
+    // top: -21px;
+    display: none;
+  }
+
+  .subtitle--mobile {
+    font-size: 32px;
+    line-height: 1;
+    right: -10px;
+    top: -12px;
+    display: block;
+    text-align: right;
+  }
+  .subtitle--big {
+    font-size: 50px;
+    top: -75px;
+  }
+  .discounts {
+    margin-top: 100px;
+  }
+  .discounts__kink {
+    display: none;
+  }
+  .discounts-cart__images {
+    width: 151px;
+    flex-shrink: 0;
+    img {
+      min-height: 100%;
+    }
+    &:before {
+      width: 151px;
+      height: 151px;
+      top: -17px;
+    }
+  }
+  .discounts-club__title {
+    font-size: 13px;
+  }
+  .discounts-club__time {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .discounts-club__text {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .discounts-club__more {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .delivery {
+    display: none;
+  }
+  .map {
+    height: 250px;
+  }
+  .phone {
+    display: none;
+  }
+  .addresses {
+    display: block;
+    column-count: 2;
+    margin-bottom: 30px;
+  }
+  .addresses-list__item {
+    font-size: 9px;
+    line-height: 12px;
+    margin-bottom: 15px;
+  }
+  .footer__phone--mobile {
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 26px;
+    display: block;
+    text-decoration-line: underline;
+
+    color: #ca4f45;
+  }
+  .mobile-nav {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    left: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    z-index: 3;
+  }
+  .mobile-nav__item {
+    background: #851b13;
+    border: 1px solid #ca4f45;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: end;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 5px;
+    cursor: pointer;
+    + .mobile-nav__item {
+      margin-left: 5px;
+    }
+  }
+  .mobile-nav__img {
+  }
+  .mobile-nav__text {
+    font-size: 10px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #ca4f45;
+  }
+
+  .modal {
+    display: none;
+    background: linear-gradient(180deg, #000000 -35.95%, #a8291f 100%);
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.55);
+    border-radius: 20px 20px 0px 0px;
+    z-index: 2;
+    width: 370px;
+    // height: 740px;
+    position: fixed;
+    margin: 0 auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 115px 22px;
+    .addresses {
+      column-count: 1;
+    }
+    .addresses-list__item {
+      margin-bottom: 25px;
+      text-transform: uppercase;
+    }
+  }
+  .modal-active {
+    display: block;
+  }
+  .modal__description {
+    margin-top: 16px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: justify;
+    width: 350px;
+    padding-right: 15px;
+  }
+}
