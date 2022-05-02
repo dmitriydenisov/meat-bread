@@ -41,6 +41,7 @@ html(lang="ru")
             .title.title--restaraunt
                 h3 Мясной клуб на  Науки 32
                 .subtitle Там где вкусно
+                .subtitle.subtitle--mobile Там где вкус
             .description
                 svg(viewBox="0 0 4097 1403" fill="none" xmlns="http://www.w3.org/2000/svg")
                     defs
@@ -67,9 +68,18 @@ html(lang="ru")
                         a.restaurant-menu__link(href="usercontent/banket-menu.pdf") банкетное меню клуба
                     li.restaurant-menu__item
                         button.restaurant-menu__btn.active интерьер
-                    li.restaurant-menu__item
+                    li.restaurant-menu__item.tour
                         button.restaurant-menu__btn 3D тур
+                ul.restaurant-menu.restaurant-menu--mobile
+                    li.restaurant-menu__item
+                        button.restaurant-menu__btn интерьер
+                    li.restaurant-menu__item
+                        a.restaurant-menu__link(href="usercontent/menu.pdf")  меню клуба
+                    li.restaurant-menu__item
+                        a.restaurant-menu__link(href="usercontent/banket-menu.pdf") банкет
                 .tabs-content
+                    .restaurant__photo
+                        img(src="img/restaurant.jpg", alt="фото ресторана")
                     .tabs-content__item.active
                         .restaurant__slider.swiper
                             .swiper-wrapper 
@@ -83,9 +93,67 @@ html(lang="ru")
                                     img(src="img/usercontent/photo-3.jpg", alt="Фото 3")
                     .tabs-content__item 
                         img(src="img/usercontent/3d-tour.jpg", alt="").tabs-content__img
+                p.slogan.slogan--mobile Если аромат свежей выпечки так и норовит возбудить
+                    | в вас сильный голод, то данное заведение сможет
+                    | доставить вам радость. Помимо вкусной еды вас ждет горячий кофе или чай.
+            .title
+                    h3 Мясные клубы
+                    .subtitle Там где вкусно
+                    .subtitle.subtitle--mobile Там где вкус
+            .clubs__slider.clubs__slider--restaurant.swiper
+                .swiper-wrapper 
+                    .swiper-slide 
+                        a(href="restaurant.html") 
+                            .cart 
+                                img.cart__img(src="img/xxl.jpg", alt="")
+                                .cart__desc 
+                                    .club__name Мясной клуб
+                                    .club__adress ул.Ворошилова  3
+                    .swiper-slide
+                        a(href="restaurant.html") 
+                            .cart 
+                                img.cart__img(src="img/xxl.jpg", alt="")
+                                .cart__desc 
+                                    .club__name Мясной клуб
+                                    .club__adress ул.Ворошилова  3
+                    .swiper-slide
+                        a(href="restaurant.html") 
+                            .cart 
+                                img.cart__img(src="img/xxl.jpg", alt="")
+                                .cart__desc 
+                                    .club__name Мясной клуб
+                                    .club__adress ул.Ворошилова  3
+                    .swiper-slide
+                        a(href="restaurant.html") 
+                            .cart 
+                                img.cart__img(src="img/xxl.jpg", alt="")
+                                .cart__desc 
+                                    .club__name Мясной клуб
+                                    .club__adress ул.Ворошилова  3
+                    .swiper-slide
+                        a(href="restaurant.html") 
+                            .cart 
+                                img.cart__img(src="img/xxl.jpg", alt="")
+                                .cart__desc 
+                                    .club__name Мясной клуб
+                                    .club__adress ул.Ворошилова  3
+                    .swiper-slide
+                        a(href="restaurant.html") 
+                            .cart 
+                                img.cart__img(src="img/xxl.jpg", alt="")
+                                .cart__desc 
+                                    .club__name Мясной клуб
+                                    .club__adress ул.Ворошилова  3
+                    .swiper-slide
+                        a(href="restaurant.html") 
+                            .cart 
+                                img.cart__img(src="img/xxl.jpg", alt="")
+                                .cart__desc 
+                                    .club__name Мясной клуб
+                                    .club__adress ул.Ворошилова  3
             .title
                 h3 Мы всегда рядом
-                .subtitle всегда на связи
+                .subtitle.subtitle--mobile всегда на связи
             .map
             footer.footer
                 .addresses
@@ -133,5 +201,190 @@ html(lang="ru")
                         p.phone__text.phone__text--footer Единый номер:
                         a.phone__number.phone__number--footer(href="tel:+78126701555") 8 (812) 670-15-55
                 .copyright 2022
+                .mobile-nav 
+                    a.mobile-nav__item(href="index.html")
+                        .mobile-nav__img 
+                            img(src="img/mobileMenu/home.svg", alt="home")
+                        .mobile-nav__text  главная
+                    a.mobile-nav__item(href="delivery.html")
+                        .mobile-nav__img 
+                            img(src="img/mobileMenu/delivery.svg", alt="delivery")
+                        .mobile-nav__text доставка
+                    .mobile-nav__item(data-geo="")
+                        .mobile-nav__img 
+                            img(src="img/mobileMenu/geo.svg", alt="geo")
+                        .mobile-nav__text заведения
+                    .mobile-nav__item(data-contact="")
+                        .mobile-nav__img 
+                            img(src="img/mobileMenu/contacts.svg", alt="contacts")
+                        .mobile-nav__text контакты
+                    .mobile-nav__item(data-basket="")
+                        .mobile-nav__img 
+                            img(src="img/mobileMenu/basket.svg", alt="basket")
+                        .mobile-nav__text корзина
+            .modal(data-modal-contact) 
+                button.delivery-popup__close(data-closeMobile)
+                    span
+                .addresses
+                    .addresses__item
+                        ul.addresses-list
+                            li.addresses-list__item.addresses-list__item--orange Ул. ворошилова 3
+                            li.addresses-list__item.addresses-list__item--orange пр. коммуны 63
+                            li.addresses-list__item.addresses-list__item--orange Кудрово, ул.Пражская 16
+                    .addresses__item
+                        ul.addresses-list
+                            li.addresses-list__item.addresses-list__item--blue Выборгское шоссе 15
+                            li.addresses-list__item.addresses-list__item--blue Учебный переулок 3а
+                            li.addresses-list__item.addresses-list__item--blue Типанова 27/39
+                            li.addresses-list__item.addresses-list__item--blue Суздальский 7
+                            li.addresses-list__item.addresses-list__item--blue Светлановский 48 к4
+                    .addresses__item
+                        ul.addresses-list
+                            li.addresses-list__item.addresses-list__item--green 9-я линия В.О. д 16
+                            li.addresses-list__item.addresses-list__item--red Пр. Просвещения 74\2
+                            li.addresses-list__item.addresses-list__item--red Пр.Науки 23
+
+            .modal(data-modal-restaraunt) 
+                button.delivery-popup__close(data-closeMobile)
+                    span
+                .modal__slider.swiper
+                    .swiper-wrapper 
+                        .swiper-slide 
+                            img(src="img/usercontent/photo-1.jpg", alt="Фото 1")
+                        .swiper-slide
+                            img(src="img/usercontent/photo-2.jpg", alt="Фото 2")
+                        .swiper-slide
+                            img(src="img/usercontent/photo-3.jpg", alt="Фото 3")
+                        .swiper-slide
+                            img(src="img/usercontent/photo-3.jpg", alt="Фото 3")
+                    .swiper-button-next
+                    .swiper-button-prev
+                .modal__description Краткое описание интерьера заведения для детального понимания посетителем антуража и эмоции на предстоящем ужине или обеде.
+
+            .modal(data-modal-basket) 
+                button.delivery-popup__close(data-closeMobile)
+                    span
+                .products
+                    .products__item
+                        .products__img
+                            img(src="img/products/product.jpg", alt="салат")
+                        .products__content
+                            .products__name Салат  с  курой  и огурцами
+                            .products__bottom
+                                .cart__price 
+                                    .new-price 119₽
+                                    .old-price 119₽
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                        button.products__delete(data-delete)
+                            span
+                    .products__item
+                        .products__img
+                            img(src="img/products/product.jpg", alt="салат")
+                        .products__content
+                            .products__name Салат  с  курой  и огурцами
+                            .products__bottom
+                                .cart__price 
+                                    .new-price 119₽
+                                    .old-price 119₽
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                        button.products__delete(data-delete)
+                            span
+                    .products__item
+                        .products__img
+                            img(src="img/products/product.jpg", alt="салат")
+                        .products__content
+                            .products__name Салат  с  курой  и огурцами
+                            .products__bottom
+                                .cart__price 
+                                    .new-price 119₽
+                                    .old-price 119₽
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                        button.products__delete(data-delete)
+                            span
+                    .products__item
+                        .products__img
+                            img(src="img/products/product.jpg", alt="салат")
+                        .products__content
+                            .products__name Салат  с  курой  и огурцами
+                            .products__bottom
+                                .cart__price 
+                                    .new-price 119₽
+                                    .old-price 119₽
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                        button.products__delete(data-delete)
+                            span
+                    .products__item
+                        .products__img
+                            img(src="img/products/product.jpg", alt="салат")
+                        .products__content
+                            .products__name Салат  с  курой  и огурцами
+                            .products__bottom
+                                .cart__price 
+                                    .new-price 119₽
+                                    .old-price 119₽
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                        button.products__delete(data-delete)
+                            span
+                button.basket-products__btn.basket-products__btn--modal(data-order-btn) Оформить
+            .modal(data-modal-order) 
+                button.delivery-popup__close(data-closeMobile)
+                    span
+                .modal__header Оформление заказа
+                form.modal-form
+                    label.modal-form__label Кому
+                    input.modal-form__input(type="text", placeholder='имя')
+                    input.modal-form__input(type="text", placeholder='Телефон +7( )')
+                    label.modal-form__label Куда
+                    input.modal-form__input(type="text", placeholder='Адрес доставки')
+                    .modal-form__from
+                        input.modal-form__input(type="text", placeholder='Дом')
+                        input.modal-form__input(type="text", placeholder='Корпус')
+                        input.modal-form__input(type="text", placeholder='Кв/офис')
+                    .modal-form__time
+                        label.check
+                            input.check__input(type="checkbox")
+                            span.check__box
+                            span.check__title  Как можно быстрее
+                        label.check
+                            input.check__input(type="checkbox")
+                            span.check__box
+                            span.check__title  К определенному времени
+                    input.modal-form__input.modal-form__input--smole(type="number" placeholder='Кол-во приборов') 
+                    input.modal-form__input(type="text" placeholder='Комментарий к заказу')
+                    .modal-form__links
+                        a.modal-form__link(href="#") Зоны доставки
+                        a.modal-form__link(href="#") Условия доставки
+                    label.check
+                        input.check__input(type="checkbox")
+                        span.check__box
+                        span.check__title  Я даю свое согласие на обработку персональных данных
+                    input.modal-form__button(type="submit", value="Оформить")
+
+
 script(src="https://unpkg.com/swiper@8/swiper-bundle.min.js")
 script(src="js/main.js")

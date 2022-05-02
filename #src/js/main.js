@@ -1,8 +1,8 @@
 if (document.querySelector(".clubs__slider")) {
   const swiper = new Swiper(".clubs__slider", {
-    slidesPerView: 2,
+    slidesPerView: 2.4,
     spaceBetween: 15,
-    centeredSlides: true,
+    // centeredSlides: true,
     loop: true,
     autoplay: {
       delay: 1500,
@@ -43,17 +43,18 @@ if (document.querySelector(".discounts__slider")) {
     },
   });
 }
-
-if (document.querySelector(".restaurant__slider")) {
-  const restaurantSlider = new Swiper(".restaurant__slider", {
-    slidesPerView: 3,
-    spaceBetween: 22,
-    loop: true,
-    autoplay: {
-      delay: 1500,
-      disableOnInteraction: false,
-    },
-  });
+if (document.documentElement.clientWidth >= 1000) {
+  if (document.querySelector(".restaurant__slider")) {
+    const restaurantSlider = new Swiper(".restaurant__slider", {
+      slidesPerView: 3,
+      spaceBetween: 22,
+      loop: true,
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+    });
+  }
 }
 
 //табы на странице ресторана
@@ -119,12 +120,6 @@ if (menu) {
   menu.addEventListener("click", function () {
     this.classList.add("btn-block__item-more--active");
   });
-
-  // function openMenu (event){
-  //   if(event.target.className != "btn-block__item-more”){
-  //     console.log('done')
-  //   }
-  // }
 }
 
 const tabNavItems = document.querySelectorAll(".btn-block__item");
@@ -164,7 +159,7 @@ for (const cart of carts) {
     modal.classList.add("modal-active");
   });
 }
-const closeModal = document.querySelector(".delivery-popup__close");
+const closeModal = document.querySelector("[data-btnBasket]");
 if (closeModal) {
   closeModal.addEventListener("click", () => {
     modal.classList.remove("modal-active");
@@ -172,7 +167,7 @@ if (closeModal) {
 }
 
 //модальное окно в корзине
-if (document.querySelector(".basket-products__btn")) {
+if (document.querySelector("[data-btnBasket]")) {
   const basketBtnn = document
     .querySelector(".basket-products__btn")
     .addEventListener("click", (event) => {
@@ -180,30 +175,44 @@ if (document.querySelector(".basket-products__btn")) {
       modal.classList.add("modal-active");
     });
 }
-
-const contactsMobile = document
-  .querySelector("[data-contact]")
-  .addEventListener("click", () => {
-    const modalGeo = document
+//модальное окно контактов
+if (document.querySelector("[data-contact]")) {
+  document.querySelector("[data-contact]").addEventListener("click", () => {
+    document
       .querySelector("[data-modal-contact]")
       .classList.toggle("modal-active");
   });
+}
 
-const geoMobile = document
-  .querySelector("[data-geo]")
-  .addEventListener("click", () => {
-    const modalGeo = document
+//модальое окно ресторана
+if (document.querySelector("[data-geo]")) {
+  document.querySelector("[data-geo]").addEventListener("click", () => {
+    document
       .querySelector("[data-modal-restaraunt]")
       .classList.toggle("modal-active");
   });
+}
 
-const basketMobile = document
-  .querySelector("[data-basket]")
-  .addEventListener("click", () => {
-    const modalGeo = document
+//модальное окно корзины
+if (document.querySelector("[data-basket]")) {
+  document.querySelector("[data-basket]").addEventListener("click", () => {
+    document
       .querySelector("[data-modal-basket]")
       .classList.toggle("modal-active");
   });
+}
+//модальное окно формы
+if (document.querySelector("[data-order-btn]")) {
+  document.querySelector("[data-order-btn]").addEventListener("click", () => {
+    document
+      .querySelector("[data-modal-order]")
+      .classList.toggle("modal-active");
+
+    document
+      .querySelector("[data-modal-basket]")
+      .classList.remove("modal-active");
+  });
+}
 //слайдер в модальном окне
 
 if (document.querySelector(".modal__slider")) {
@@ -215,5 +224,15 @@ if (document.querySelector(".modal__slider")) {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+  });
+}
+
+//закрытие модальных окон в мобильной версии
+
+const closeMobiles = document.querySelectorAll("[data-closeMobile]");
+
+for (const closeMobile of closeMobiles) {
+  closeMobile.addEventListener("click", () => {
+    closeMobile.closest(".modal").classList.remove("modal-active");
   });
 }
