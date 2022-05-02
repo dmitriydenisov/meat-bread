@@ -1101,4 +1101,37 @@
       display: block;
     }
   }
+  .delivery-popup__image img {
+    object-position: -170px;
+    object-fit: contain;
+  }
+  .delivery-popup__close {
+    top: 0;
+  }
+  .delivery-popup__title {
+    line-height: 1;
+    margin: 10px 0;
+  }
+}
+@media (max-width: 390px) {
+  .delivery-popup-description__name,
+  .delivery-popup-description__kkol {
+    font-size: 9px;
+  }
+  .delivery-popup__text {
+    font-size: 8px;
+  }
+  .delivery-popup__body .cart__add {
+    padding: 12px 9px;
+  }
+  .delivery-popup__body .count {
+    font-size: 15px;
+    padding: 0;
+  }
+  .cart-minus {
+    display: flex;
+  }
+  .delivery-popup__body .cart__count {
+    display: flex;
+  }
 }
