@@ -5,7 +5,8 @@
   .modal,
   .restaurant-menu--mobile,
   .restaurant__photo,
-  .clubs__slider--restaurant {
+  .clubs__slider--restaurant,
+  .card__price--mobile {
     display: none;
   }
 }
@@ -30,6 +31,9 @@
   }
   .copyright {
     margin-bottom: 40px;
+  }
+  .btn-block__item {
+    font-size: 26px;
   }
 }
 @media (max-width: 2250px) {
@@ -96,6 +100,9 @@
     &:after {
       font-size: 57px;
     }
+  }
+  .btn-block__item {
+    font-size: 20px;
   }
 }
 @media (max-width: 2050px) {
@@ -204,6 +211,28 @@
       font-size: 45px;
     }
   }
+  .btn-block__item {
+    font-size: 18px;
+    + .btn-block__item {
+      margin-left: 12px;
+    }
+  }
+  .btn-block__item-more {
+    font-size: 18px;
+  }
+  .btn-block-more {
+    width: 420px;
+  }
+  .delivery__content {
+    width: 1091px;
+  }
+  .cart--delivery {
+    width: 352px;
+  }
+  .delivery-popup__body {
+    width: auto;
+    padding: 50px 85px;
+  }
 }
 @media (max-width: 1600px) {
   .menu__list {
@@ -289,6 +318,33 @@
     font-size: 20px;
     line-height: 26px;
   }
+  .cart__add {
+    width: 305px;
+  }
+  .cart__btn {
+    font-size: 22px;
+  }
+  .count {
+    padding: 0 10px;
+  }
+  .btn-block {
+    padding: 18px 40px;
+  }
+  .categories__title {
+    font-size: 23px;
+  }
+  .delivery-popup__body {
+    padding: 50px 47px;
+  }
+  .delivery-popup__image {
+    width: 80%;
+    img {
+      width: 1428px;
+      height: 533px;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
 }
 @media (max-width: 1440px) {
   .discounts-cart__images {
@@ -313,6 +369,19 @@
     &:after {
       right: 15px;
     }
+  }
+  .btn-block__item {
+    font-size: 13px;
+  }
+  .btn-block-more .btn-block__item-more {
+    margin-bottom: 15px;
+  }
+  .btn-block-more .btn-block__item + .btn-block__item {
+    margin-top: 2px;
+  }
+  .delivery-popup__body {
+    padding: 50px 0;
+    width: 80%;
   }
 }
 @media (max-width: 1366px) {
@@ -341,8 +410,45 @@
       font-size: 40px;
     }
   }
-  .modal {
-    display: none;
+  .delivery-popup__body {
+    height: 550px;
+    padding: 20px 0;
+  }
+  .delivery-popup__image {
+    height: 50%;
+  }
+  .delivery-popup__content {
+    width: 80%;
+    margin-top: 30px;
+  }
+  .delivery-popup__text {
+    width: 50%;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .delivery-popup-description__item + .delivery-popup-description__item {
+    margin-top: 7px;
+    font-size: 10px;
+  }
+  .delivery-popup__image {
+    height: 250px;
+    img {
+      object-fit: revert;
+    }
+  }
+  .delivery-popup__info {
+    margin-bottom: 13px;
+  }
+  .delivery-popup__title {
+    font-size: 15px;
+  }
+  .delivery-popup__body .cart__add {
+    margin-top: 15px;
+  }
+  .delivery-popup__body {
+    .cart__add {
+      padding: 12px 32px;
+    }
   }
 }
 @media (max-width: 1280px) {
@@ -351,6 +457,9 @@
   }
   .club__adress {
     font-size: 23px;
+  }
+  .btn-block-more {
+    width: 285px;
   }
 }
 @media (max-width: 1200px) {
@@ -378,6 +487,12 @@
       right: 116px;
       font-size: 29px;
     }
+  }
+  .delivery__content {
+    width: 100%;
+  }
+  .delivery-popup__text {
+    width: 49%;
   }
 }
 @media (max-width: 1024px) {
@@ -419,6 +534,24 @@
   .delivery__title:after {
     right: 35px;
   }
+  .btn-block {
+    padding: 18px 10px;
+  }
+  .btn-block__item + .btn-block__item {
+    margin-left: 0;
+  }
+  .btn-block__item {
+    font-size: 10px;
+  }
+  .btn-block-more .btn-block__item-more {
+    margin-bottom: 0;
+  }
+  .btn-block-more .btn-block__item + .btn-block__item {
+    margin-top: 0;
+  }
+  .delivery-popup-description {
+    width: 45%;
+  }
 }
 @media (max-width: 900px) {
   .menu__list + .menu__list {
@@ -437,11 +570,19 @@
   }
 }
 @media (max-width: 768px) {
+  .delivery-popup__body {
+    height: 526px;
+  }
+  .delivery-popup__text {
+    font-size: 10px;
+  }
+  .delivery-popup-description__item + .delivery-popup-description__item {
+    font-size: 5px;
+  }
 }
-
 @media (max-width: 560px) {
   body {
-    overflow-x: hidden;
+    // overflow-x: hidden;
   }
   .menu {
     display: none;
@@ -876,5 +1017,88 @@
   .clubs__slider--restaurant {
     display: block;
     margin-bottom: 95px;
+  }
+  .categories__title {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .btn-block {
+    display: flex;
+    overflow: auto;
+    position: absolute;
+    z-index: -1;
+    left: 27%;
+  }
+  .categories__items {
+    width: 350px;
+  }
+  .delivery__content {
+    width: auto;
+  }
+  .btn-block__item {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .cart--delivery {
+    width: 150px;
+    margin-bottom: 40px;
+  }
+  .cart__img img {
+    width: 148px;
+    height: 90px;
+  }
+  .cart__price {
+    display: none;
+  }
+  .cart__add {
+    padding: 6px 0;
+    width: auto;
+  }
+  .cart__name {
+    font-size: 10px;
+    line-height: 1.4;
+  }
+  .cart__btn {
+    display: none;
+  }
+  .cart__count {
+    margin: 0 auto;
+  }
+  .btn-block__item-more {
+    display: none;
+  }
+  .cart__desc {
+    padding: 10px !important;
+  }
+  .cart__count {
+    display: none;
+  }
+  .card__price--mobile {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0 auto;
+    display: block;
+  }
+  .delivery-popup-description__name,
+  .delivery-popup-description__kkol {
+    font-size: 12px;
+  }
+  .delivery-popup__content {
+    margin-top: 9px;
+  }
+  .delivery-popup__info {
+    margin-bottom: 0;
+  }
+  .delivery-popup.modal-active {
+    z-index: 3;
+  }
+  .delivery-popup__body {
+    .cart__btn,
+    .cart__count {
+      display: block;
+    }
   }
 }
