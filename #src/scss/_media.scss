@@ -277,8 +277,17 @@
 
   .title--restaraunt {
     &:before {
-      left: -481px;
+      left: -883px;
     }
+    h3 {
+      font-size: 42px;
+    }
+    .subtitle {
+      top: 0;
+    }
+  }
+  .description {
+    margin-top: -45px;
   }
 }
 @media (max-width: 1600px) {
@@ -395,11 +404,34 @@
 
   .title--restaraunt {
     &:before {
-      width: 2000px;
+      top: -43px;
+      left: -62%;
+      height: 88px;
+      width: 2350px;
     }
     h3 {
-      font-size: 60px;
+      font-size: 41px;
+      line-height: 1;
     }
+    .subtitle {
+      font-size: 59px;
+      top: -22px;
+    }
+  }
+  .description {
+    margin-top: -28px;
+  }
+  .phone--restaraunt {
+    .phone__text {
+      font-size: 30px;
+      line-height: 1;
+    }
+    .phone__number--restaraunt {
+      font-size: 48px;
+    }
+  }
+  .slogan {
+    margin-top: 50px;
   }
 }
 @media (max-width: 1440px) {
@@ -452,16 +484,11 @@
   .basket-products__img {
     width: 255px;
   }
+  .title--restaraunt:before {
+    left: -81%;
+  }
 }
 @media (max-width: 1366px) {
-  .title--restaraunt {
-    &:before {
-      width: 4px;
-    }
-    h3 {
-      font-size: 65px !important;
-    }
-  }
   .cart__desc {
     padding: 40px 13px;
   }
@@ -536,6 +563,24 @@
   .cart__price--basket {
     font-size: 15px;
   }
+
+  .title--restaraunt {
+    &:before {
+      left: -94%;
+    }
+  }
+  .restaurant__slider {
+    height: 511px;
+    .swiper-slide {
+      text-align: center;
+      max-width: 500px;
+      overflow: hidden;
+    }
+    img {
+      object-fit: cover;
+      max-width: 500px;
+    }
+  }
 }
 @media (max-width: 1280px) {
   .cart__desc {
@@ -556,6 +601,11 @@
   .amount-cost__item {
     margin: 9px 0;
     font-size: 14px;
+  }
+  .title--restaraunt {
+    &:before {
+      display: none;
+    }
   }
 }
 @media (max-width: 1200px) {

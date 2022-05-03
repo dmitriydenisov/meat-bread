@@ -46,8 +46,9 @@ if (document.querySelector(".discounts__slider")) {
 if (document.documentElement.clientWidth >= 1000) {
   if (document.querySelector(".restaurant__slider")) {
     const restaurantSlider = new Swiper(".restaurant__slider", {
-      slidesPerView: 1,
-      slidesPerView: "auto",
+      autoHeight: true,
+      slidesPerView: 3,
+      spaceBetween: 22,
       loop: true,
       autoplay: {
         delay: 1500,
@@ -60,7 +61,7 @@ if (document.documentElement.clientWidth >= 1000) {
         },
         2300: {
           slidesPerView: 3,
-          spaceBetween: 60,
+          spaceBetween: 1,
         },
       },
     });
@@ -108,6 +109,7 @@ for (const count of counters1) {
     event.preventDefault();
     ++countontent;
     counts.textContent = countontent;
+    summBasket();
   }
 
   function minus(event) {
@@ -115,6 +117,7 @@ for (const count of counters1) {
     if (countontent > 1) {
       --countontent;
       counts.textContent = countontent;
+      summBasket();
     }
   }
   catrMinusBtns.addEventListener("click", minus);
@@ -246,3 +249,35 @@ for (const closeMobile of closeMobiles) {
     closeMobile.closest(".modal").classList.remove("modal-active");
   });
 }
+
+//подсчет суммы в корзине
+function summBasket() {
+  const basketProductItems = document.querySelectorAll("[data-dproduct]");
+
+  let totalSum = 0;
+  let totalSale = 0;
+  const sumDelivery = 350;
+
+  for (const basketProductItem of basketProductItems) {
+    const newPrice = basketProductItem.querySelector("[data-new-price]");
+    const oldPrice = basketProductItem.querySelector("[data-old-price]");
+    const counter = basketProductItem.querySelector("[data-count]");
+
+    const sum = parseInt(newPrice.innerText) * parseInt(counter.innerText);
+    const sale = parseInt(counter.innerText) * parseInt(oldPrice.innerText);
+
+    totalSum += sum;
+    totalSale += sale;
+  }
+  sumBusket = totalSum + sumDelivery - totalSale;
+
+  document.querySelector("[data-total-sum]").innerText =
+    totalSum.toLocaleString();
+  document.querySelector("[data-sale-sum]").innerText =
+    totalSale.toLocaleString();
+  document.querySelector("[data-total]").innerText = sumBusket.toLocaleString();
+  document.querySelector("[data-delivery-sum]").innerText =
+    sumDelivery.toLocaleString();
+}
+
+summBasket();

@@ -56,34 +56,20 @@ html(lang="ru")
                         .title
                             h3 Ваш заказ
                         .basket-products
-                            .basket-products__item
+                            .basket-products__item(data-dproduct)
                                 .basket-products__img
                                     img(src="img/products/product.jpg", alt="салат")
                                 .basket-products__name Салат  с  курой  и огурцами
                                 .cart__count(data-counter="") 
                                     button.cart-btn.cart-minus
                                         img(src="img/minus.svg", alt="убрать")
-                                    span.count 1
+                                    span.count(data-count) 1
                                     button.cart-btn.cart-plus
                                         img(src="img/plus.svg", alt="добавить")
                                 .cart__price.cart__price--basket 
-                                    .new-price 119₽
-                                    .old-price 119₽
-                            .basket-products__item
-                                .basket-products__img
-                                    img(src="img/products/product.jpg", alt="салат")
-                                //- img.basket-products__img(src="img/products/product.jpg", alt="салат")
-                                .basket-products__name Салат  с  курой  и огурцами
-                                .cart__count(data-counter="") 
-                                    button.cart-btn.cart-minus
-                                        img(src="img/minus.svg", alt="убрать")
-                                    span.count 1
-                                    button.cart-btn.cart-plus
-                                        img(src="img/plus.svg", alt="добавить")
-                                .cart__price.cart__price--basket 
-                                    .new-price 119₽
-                                    .old-price 119₽
-                            .basket-products__item
+                                    .new-price(data-new-price) 119₽
+                                    .old-price(data-old-price) 19₽
+                            .basket-products__item(data-dproduct)
                                 .basket-products__img
                                     img(src="img/products/product.jpg", alt="салат")
                                 //- img.basket-products__img(src="img/products/product.jpg", alt="салат")
@@ -91,28 +77,42 @@ html(lang="ru")
                                 .cart__count(data-counter="") 
                                     button.cart-btn.cart-minus
                                         img(src="img/minus.svg", alt="убрать")
-                                    span.count 1
+                                    span.count(data-count) 1
                                     button.cart-btn.cart-plus
                                         img(src="img/plus.svg", alt="добавить")
                                 .cart__price.cart__price--basket 
-                                    .new-price 119₽
-                                    .old-price 119₽
+                                    .new-price(data-new-price) 119₽
+                                    .old-price(data-old-price) 19₽
+                            .basket-products__item(data-dproduct)
+                                .basket-products__img
+                                    img(src="img/products/product.jpg", alt="салат")
+                                //- img.basket-products__img(src="img/products/product.jpg", alt="салат")
+                                .basket-products__name Салат  с  курой  и огурцами
+                                .cart__count(data-counter="") 
+                                    button.cart-btn.cart-minus
+                                        img(src="img/minus.svg", alt="убрать")
+                                    span.count(data-count) 1
+                                    button.cart-btn.cart-plus
+                                        img(src="img/plus.svg", alt="добавить")
+                                .cart__price.cart__price--basket 
+                                    .new-price(data-new-price) 119₽
+                                    .old-price(data-old-price) 19₽
                     .form__right
                         .amount
                             .amount__title сумма заказа
                             .amount-cost
                                 .amount-cost__item
                                     .amount-cost__name Общая стоимость:
-                                    .amount-cost__sum 781
+                                    .amount-cost__sum(data-total-sum) 0
                                 .amount-cost__item
                                     .amount-cost__name Стоимость доставки:
-                                    .amount-cost__sum 329
+                                    .amount-cost__sum(data-delivery-sum) 0
                                 .amount-cost__item
                                     .amount-cost__name Скидка:
-                                    .amount-cost__sum 432
+                                    .amount-cost__sum(data-sale-sum) 0
                                 .amount-cost__item
                                     .amount-cost__name Итого:
-                                    .amount-cost__sum 1248
+                                    .amount-cost__sum(data-total) 10
                     button.basket-products__btn Оформить
             footer.footer
                 .download 
