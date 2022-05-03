@@ -1,18 +1,11 @@
-@media (max-width: 2560px) {
-  .subtitle--mobile,
-  .mobile-nav,
-  .footer__phone--mobile,
-  .modal,
-  .restaurant-menu--mobile,
-  .restaurant__photo,
-  .clubs__slider--restaurant,
-  .card__price--mobile {
-    display: none;
-  }
-}
 @media (max-width: 2450px) {
   .subtitle {
     font-size: 85px;
+  }
+  .title--restaraunt {
+    &:before {
+      left: -391px;
+    }
   }
 }
 @media (max-width: 2300px) {
@@ -58,6 +51,11 @@
   .amount__title {
     font-size: 50px;
   }
+  .title--restaraunt {
+    &:before {
+      width: 2452px;
+    }
+  }
 }
 @media (max-width: 2200px) {
   .discounts-cart__images {
@@ -82,6 +80,12 @@
   }
   .amount {
     padding: 14px 30px;
+  }
+  .phone--restaraunt {
+    bottom: 0;
+  }
+  .download--restauran {
+    bottom: -70px;
   }
 }
 @media (max-width: 2100px) {
@@ -270,6 +274,12 @@
   .cart__price--basket {
     font-size: 20px;
   }
+
+  .title--restaraunt {
+    &:before {
+      left: -481px;
+    }
+  }
 }
 @media (max-width: 1600px) {
   .menu__list {
@@ -382,6 +392,15 @@
       object-position: top;
     }
   }
+
+  .title--restaraunt {
+    &:before {
+      width: 2000px;
+    }
+    h3 {
+      font-size: 60px;
+    }
+  }
 }
 @media (max-width: 1440px) {
   .discounts-cart__images {
@@ -435,6 +454,14 @@
   }
 }
 @media (max-width: 1366px) {
+  .title--restaraunt {
+    &:before {
+      width: 4px;
+    }
+    h3 {
+      font-size: 65px !important;
+    }
+  }
   .cart__desc {
     padding: 40px 13px;
   }

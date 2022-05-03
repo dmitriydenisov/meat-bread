@@ -78,4 +78,17 @@
   white-space: pre-line;
 }
 
+.subtitle--mobile,
+.mobile-nav,
+.footer__phone--mobile,
+.modal,
+.restaurant-menu--mobile,
+.restaurant__photo,
+.clubs__slider--restaurant,
+.card__price--mobile,
+.slogan--mobile,
+.title--mobile {
+  display: none;
+}
+
 @import "media";
