@@ -13,16 +13,16 @@ html(lang="ru")
                 nav.menu
                     ul.menu__list
                         li.menu__list 
-                            a.menu__link.menu__link--active(href="/") Главная
+                            a.menu__link.menu__link--active(href="index.html") Главная
                         li.menu__list 
                             a.menu__link(href="delivery.html") Доставка
                         li.menu__list 
                             a.menu__link(href="contacts.html") Контакты
-                a.logo(href="#")
-                        img(src="img/logo.svg", alt="logo", height="171") 
+                a.logo(href="index.html")
+                        img(src="img/logo.svg", alt="logo") 
                 .header__box 
                     a.header__phone(href="tel:+78126701555") 8 (812) 670-15-55
-                    a.header__basket(href="#")
+                    a.header__basket(href="basket.html")
                         img(src="img/basket.svg", alt="Корзина")
                         p.basket__num 1
                     ul.social-list.social-list--top
@@ -44,12 +44,11 @@ html(lang="ru")
                     img(src="img/sale-photo.jpg", alt="")
                 .sale__description
                     .sale__header Скидка 50% каждый день
-                    .sale__text 
-                        //- prettier-ignore
-                        |Мы рады предложить вам выгодные условия каждый день
-                        |на всю продукцию выпечки в наших заведениях в половину цены
-                        |Каждый день с 20:00 до закрытия любую выпечку вы приобретаете
-                        |с 50%-ой скидкой.
+                    .sale__text.
+                        Мы рады предложить вам выгодные условия каждый день
+                        на всю продукцию выпечки в наших заведениях в половину цены
+                        Каждый день с 20:00 до закрытия любую выпечку вы приобретаете
+                        с 50%-ой скидкой.
                 section.discounts
                     .title
                         h3 Мясные акции
@@ -65,7 +64,7 @@ html(lang="ru")
                                             .discounts-club__title Каждый день
                                             p.discounts-club__time  после 20:00
                                             p.discounts-club__text на всю сладкую выпечку <br> скидка 50%
-                                        a.discounts-club__more(href="#") подробнее
+                                        span.discounts-club__more подробнее
                                 .swiper-slide 
                                     a.discounts-cart(href="sale.html")
                                         .discounts-cart__images
@@ -74,7 +73,7 @@ html(lang="ru")
                                             .discounts-club__title Каждый день
                                             p.discounts-club__time  после 20:00
                                             p.discounts-club__text на всю сладкую выпечку <br> скидка 50%
-                                        a.discounts-club__more(href="#") подробнее
+                                        span.discounts-club__more подробнее
                                 .swiper-slide 
                                     a.discounts-cart(href="sale.html")
                                         .discounts-cart__images
@@ -83,7 +82,7 @@ html(lang="ru")
                                             .discounts-club__title Каждый день
                                             p.discounts-club__time  после 20:00
                                             p.discounts-club__text на всю сладкую выпечку <br> скидка 50%
-                                        a.discounts-club__more(href="#") подробнее
+                                        span.discounts-club__more подробнее
                         a.discounts__kink(href="#")
                             img(src="img/arrow-link.svg", alt="")
                 .delivery

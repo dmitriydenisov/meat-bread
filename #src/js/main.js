@@ -279,5 +279,6 @@ function summBasket() {
   document.querySelector("[data-delivery-sum]").innerText =
     sumDelivery.toLocaleString();
 }
-
-summBasket();
+if (document.querySelector(".basket-content")) {
+  summBasket();
+}
